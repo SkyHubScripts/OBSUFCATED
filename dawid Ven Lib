@@ -1,0 +1,47 @@
+local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Ven%20Lib.lua")()
+
+local s = lib:Window("Ven Lib")
+
+local a = s:Tab("Tab 1")
+
+a:Button(
+"Button",
+function()
+print("Pressed!")
+end
+)
+
+a:Toggle(
+"Toggle",
+function(t)
+print(t)
+end
+)
+
+a:Slider(
+"Slider",
+50,
+500,
+50,
+function(t)
+print(t)
+end
+)
+
+a:Dropdown(
+"Dropdown",
+{"Option 1", "Option 2", "Option 3", "Option 4", "Option 5"},
+function(t)
+print(t)
+end
+)
+
+a:Textbox(
+"Textbox",
+true,
+function(t)
+print(t)
+end
+)
+
+s:Tab("Tab 2")
